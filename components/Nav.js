@@ -40,17 +40,17 @@ export default function Nav(props) {
             </nav>
             <div className={dropdownState ? "dropdown dropdownOpen" : "dropdown dropdownClosed"}>
                 <div className="dropdownElements">
-                    <Link href="/" onClick={changeDropdownStateFunction}>
-                        <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Home</a>
+                    <Link href="/">
+                        <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave} onClick={changeDropdownStateFunction}>Home</a>
                     </Link>
-                    <Link href="/#work" onClick={changeDropdownStateFunction}>
-                        <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Services</a>
+                    <Link href="/#services">
+                        <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave} onClick={changeDropdownStateFunction}>Services</a>
                     </Link>
-                    <Link href="/#about" onClick={changeDropdownStateFunction}>
-                        <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>About</a>
+                    <Link href="/#about">
+                        <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave} onClick={changeDropdownStateFunction}>About</a>
                     </Link>
-                    <Link href="/#contact" onClick={changeDropdownStateFunction}>
-                        <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Contact Us</a>
+                    <Link href="/#contact">
+                        <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave} onClick={changeDropdownStateFunction}>Contact Us</a>
                     </Link>
                     <div className="dropdownElementsSocials">
                         <a href="https://www.linkedin.com/company/knp-media" target="_blank" rel="noreferrer noopener" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>
