@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import { motion } from "framer-motion"
 import CustomCursor from "../components/CustomCursor"
 import Nav from '../components/Nav'
 import HomeMain from '../components/HomeMain'
@@ -23,15 +22,9 @@ export default function Home({ isFirstMount }) {
       changeCursorVariant("default")
   }
 
-  const animationConfiguration = {
-      initial: { opacity: 0 },
-      animate: { opacity: 1 },
-      exit: { opacity: 0 },
-  };
-
 
   return (
-    <motion.div variants={!isFirstMount && animationConfiguration} initial="initial" animate="animate" exit="exit" transition={{ duration: 0.75 }} className="opacityPageTransition">
+    <>
       <Nav 
         cursorEnter={cursorEnter}
         cursorLeave={cursorLeave}
@@ -50,6 +43,6 @@ export default function Home({ isFirstMount }) {
         cursorVariant={cursorVariant}
         cursorColor={cursorColor}
       />
-    </motion.div>
+    </>
   )
 }

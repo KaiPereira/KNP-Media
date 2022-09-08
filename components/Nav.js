@@ -22,13 +22,13 @@ export default function Nav(props) {
                     <Link href="/">
                         <a className="navigationElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Home</a>
                     </Link>
-                    <Link href="/#services">
+                    <Link href="#services">
                         <a className="navigationElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Services</a>
                     </Link>
-                    <Link href="/#about">
+                    <Link href="#about">
                         <a className="navigationElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>About</a>
                     </Link>
-                    <Link href="/#contact">
+                    <Link href="#contact">
                         <button onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Get In Touch</button>
                     </Link>
                 </div>
@@ -43,13 +43,13 @@ export default function Nav(props) {
                     <Link href="/">
                         <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave} onClick={changeDropdownStateFunction}>Home</a>
                     </Link>
-                    <Link href="/#services">
+                    <Link href="#services">
                         <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave} onClick={changeDropdownStateFunction}>Services</a>
                     </Link>
-                    <Link href="/#about">
+                    <Link href="#about">
                         <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave} onClick={changeDropdownStateFunction}>About</a>
                     </Link>
-                    <Link href="/#contact">
+                    <Link href="#contact">
                         <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave} onClick={changeDropdownStateFunction}>Contact Us</a>
                     </Link>
                     <div className="dropdownElementsSocials">
