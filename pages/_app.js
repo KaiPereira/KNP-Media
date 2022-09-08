@@ -6,8 +6,8 @@ import Script from 'next/script';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-601BSX2ENR`} />
-      <Script strategy="lazyOnload">
+      <Script id="Google Ad URL" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-601BSX2ENR`} />
+      <Script id="Google Ad Script" strategy="lazyOnload">
           {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
