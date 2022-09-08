@@ -40,16 +40,16 @@ export default function Nav(props) {
             </nav>
             <div className={dropdownState ? "dropdown dropdownOpen" : "dropdown dropdownClosed"}>
                 <div className="dropdownElements">
-                    <Link href="/">
+                    <Link href="/" onClick={changeDropdownStateFunction}>
                         <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Home</a>
                     </Link>
-                    <Link href="/work">
+                    <Link href="/#work" onClick={changeDropdownStateFunction}>
                         <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Services</a>
                     </Link>
-                    <Link href="/about">
+                    <Link href="/#about" onClick={changeDropdownStateFunction}>
                         <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>About</a>
                     </Link>
-                    <Link href="/contact">
+                    <Link href="/#contact" onClick={changeDropdownStateFunction}>
                         <a className="dropdownElement" onMouseEnter={props.cursorEnter} onMouseLeave={props.cursorLeave}>Contact Us</a>
                     </Link>
                     <div className="dropdownElementsSocials">
