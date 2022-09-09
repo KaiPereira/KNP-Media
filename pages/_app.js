@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="Kai Pereira" />
         <link rel="icon" href="/KNP Media 2.svg" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-        <meta name="google-site-verification" content="uGrF0mVDMAq7On8c8iYAauwOIMVPxgOJhqrQcr3P9_U" />
+        <meta name="google-site-verification" content="hxY2eRF7uny8z4kLsNrZX16kBqA_stdkm2qs0HRucQk" />
       </Head>
       <Component {...pageProps} />
     </>
