@@ -5,6 +5,7 @@ import CustomCursor from "../components/CustomCursor"
 import Nav from '../components/Nav'
 import HomeMain from '../components/HomeMain'
 import Footer from "../components/Footer"
+import Head from 'next/head'
 
 export default function Home({ isFirstMount }) {
   const [cursorVariant, changeCursorVariant] = React.useState("default")
@@ -25,6 +26,9 @@ export default function Home({ isFirstMount }) {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://knp-media.vercel.app/" />
+      </Head>
       <Nav 
         cursorEnter={cursorEnter}
         cursorLeave={cursorLeave}
